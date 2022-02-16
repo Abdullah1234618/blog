@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right,red,rgb(161, 12, 12) );
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: white;
+}
+#h1header{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+    
+}
+header a{
+    color: black;
+    font-family: sans-serif;
+}
+#logoimg{
+    height: 100%;
+    border-radius: 50%;
+}
+nav{
+    width:70% ;
+    text-align: center;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(255, 0, 0);
+    border-top: 3px solid white;
+    clip-path: polygon(5% 0, 100% 0, 96% 100%,0% 100%);
+    animation-name:changeBackground;
+    animation-duration: 5s;
+
+}
+aside{
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    float: left;
+}
+aside img{
+width: 90%;
+}
+#h1asdie{
+    padding: 20px 0;
+    border-bottom: 2px solid red ;
+}
+#article{
+    float: right;
+    width:100%;
+    height: 230px;
+    background-color: white;
+    position: relative;
+}
+#box{
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 180px;
+    background-color: cadetblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+#box h1{
+    border-bottom: 3px solid red;
+    padding: 15px 0;
+}
+#box p{
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-align: justify;
+
+}
+#contant-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+#contant-box img{
+    width: 45px;
+    border-bottom: 3px solid red;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#contant-box img:hover{
+    width: 55px;
+    border-bottom: 3px double yellow;
+
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: brown;
+    margin-top:10px ;
+  
+   
+}
+@keyframes changeBackground {
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: rgb(152, 82, 209);
+    }
+
+
+    50%{
+        background-color: rgb(82, 209, 99);
+    }
+    100%{
+        background-color: rgb(128, 21, 21);
+
+    }
+    
+}
+@media only screen and (min-width:940px) and (max-width:1070px){
+#logobox{
+    width: 35%;
+}
+#article{
+    width: 65%;
+}
+aside{
+    width: 35%;
+}
+    
+}
+@media only screen and (max-width:940px) and (min-width:802px){
+    #logobox{
+        width: 40%;
+    }
+        
+    }
+    @media only screen and (max-width:801px) {
+       header,main{
+           height: auto;
+        }
+        #logobox{
+            width: 100%;
+         text-align: center;
+
+        }
+        #h1header,#logo{
+            float: none;
+        }  
+        span a{
+            text-decoration: none;
+        }
+        nav{
+            width: 100%;
+        }
+        #article{
+            height: 230px;
+            width: 100%;
+            background-color:white ;
+        }
+        }
+        @media only screen and (max-width:500px) { 
+           nav li{
+                display: block;
+                width: 100%;
+           }
+             
+
+
+
+        }
